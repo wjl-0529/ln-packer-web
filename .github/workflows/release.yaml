@@ -54,4 +54,6 @@ jobs:
         run: npm run build
 
       - name: Compile server
-        run: dart compile exe bin/server.dart -o build/server
+        run: |
+          mkdir -p build
+          dart compile exe bin/server.dart -o build/server
