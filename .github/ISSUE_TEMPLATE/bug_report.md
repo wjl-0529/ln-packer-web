@@ -9,7 +9,7 @@ assignees:
 
 ### 使用版本
 
-请填写 LN Packer Web 版本号或 commit。
+请填写 bili-novel-UI-Packer 版本号或 commit。
 
 ### 运行方式
 

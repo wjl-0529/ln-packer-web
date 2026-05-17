@@ -62,7 +62,7 @@ Future<void> main(List<String> args) async {
   });
 
   final server = await shelf_io.serve(handler, host, port);
-  print("LN Packer Web 服务已启动: http://${server.address.host}:$port");
+  print("bili-novel-UI-Packer 服务已启动: http://${server.address.host}:$port");
   print("数据目录: ${dataDir.absolute.path}");
   print("静态资源目录: ${Directory(publicDir).absolute.path}");
 }

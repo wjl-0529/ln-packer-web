@@ -1,7 +1,7 @@
-name: ln-packer-web
+name: bili-novel-ui-packer
 
 services:
-  ln-packer-web:
+  bili-novel-ui-packer:
     build:
       context: .
       args:
@@ -9,7 +9,7 @@ services:
         DART_IMAGE: ${DART_IMAGE:-dart:stable}
         DEBIAN_IMAGE: ${DEBIAN_IMAGE:-debian:bookworm-slim}
         APT_MIRROR: ${APT_MIRROR:-}
-    container_name: ln-packer-web
+    container_name: bili-novel-ui-packer
     restart: unless-stopped
     ports:
       - "${PACKER_PORT:-8080}:8080"

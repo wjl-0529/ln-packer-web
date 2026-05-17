@@ -1,4 +1,4 @@
-# LN Packer Web Windows 本地便携版
+# bili-novel-UI-Packer Windows 本地便携版
 
 ## 启动
 

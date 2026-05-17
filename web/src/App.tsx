@@ -743,7 +743,7 @@ function Sidebar({
     <aside className="sidebar">
       <div className="brand">
         <BookOpen size={28} />
-        <span>LN Packer Web</span>
+        <span>bili-novel-UI-Packer</span>
       </div>
       <nav className="navList">
         {navItems.map((item) => (

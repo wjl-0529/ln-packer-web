@@ -1,6 +1,6 @@
-# LN Packer Web 部署说明
+# bili-novel-UI-Packer 部署说明
 
-LN Packer Web 是自托管 Web App，后端需要持续运行，因此不能直接部署到 GitHub Pages。服务器部署推荐使用 Docker Compose。
+bili-novel-UI-Packer 是自托管 Web App，后端需要持续运行，因此不能直接部署到 GitHub Pages。服务器部署推荐使用 Docker Compose。
 
 ## Docker Compose
 
@@ -19,7 +19,7 @@ docker compose up -d --build
 默认访问地址：
 
 ```text
-http://服务器 IP:8080
+http://服务器IP:8080
 ```
 
 生成的 EPUB、任务记录和日志保存在宿主机 `./data` 目录。
@@ -65,7 +65,7 @@ powershell -ExecutionPolicy Bypass -File scripts\build_local_windows.ps1
 输出目录：
 
 ```text
-dist/local-windows/LN Packer Web/
+dist/local-windows/bili-novel-UI-Packer/
 ```
 
 交给用户时保留整个文件夹即可。用户双击 `start.bat` 会自动启动服务并打开 `http://localhost:8080`，双击 `stop.bat` 停止服务。

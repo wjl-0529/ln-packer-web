@@ -1,4 +1,4 @@
-<h1 align="center">LN Packer Web</h1>
+<h1 align="center">bili-novel-UI-Packer</h1>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
@@ -7,7 +7,7 @@
   <img alt="Docker" src="https://img.shields.io/badge/Docker-Compose-2496ED">
 </p>
 
-LN Packer Web 是一个自托管轻小说 EPUB 打包工具。它在原有 Dart CLI 打包能力上增加了 Web 后端、React 工作台、任务进度、取消任务、中文搜索、下载管理、Docker 部署和 Windows 本地便携版。
+bili-novel-UI-Packer 是一个自托管轻小说 EPUB 打包工具。它在原有 Dart CLI 打包能力上增加了 Web 后端、React 工作台、任务进度、取消任务、中文搜索、下载管理、Docker 部署和 Windows 本地便携版。
 
 > 本项目基于 [Montaro2017/bili_novel_packer](https://github.com/Montaro2017/bili_novel_packer) 二次开发，沿用 MIT License。Web 化、UI、部署方案和部分重构由 AI 辅助开发，并经过人工确认与测试。
 
@@ -56,7 +56,7 @@ powershell -ExecutionPolicy Bypass -File scripts\build_local_windows.ps1
 输出目录：
 
 ```text
-dist/local-windows/LN Packer Web/
+dist/local-windows/bili-novel-UI-Packer/
 ```
 
 将整个文件夹交给用户，双击 `start.bat` 启动，双击 `stop.bat` 停止。用户不需要安装 Dart、Node 或 Docker。
@@ -89,7 +89,7 @@ dart run bin/main.dart
 或编译为可执行文件：
 
 ```bash
-dart compile exe bin/main.dart -o build/ln-packer-web-cli
+dart compile exe bin/main.dart -o build/bili-novel-ui-packer-cli
 ```
 
 ## 配置项

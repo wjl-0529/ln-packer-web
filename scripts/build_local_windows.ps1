@@ -6,7 +6,7 @@
 $ErrorActionPreference = "Stop"
 
 $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
-$PackageName = "LN Packer Web"
+$PackageName = "bili-novel-UI-Packer"
 $ReadmeName = (-join ([char[]](0x4F7F, 0x7528, 0x8BF4, 0x660E))) + ".md"
 $DistRoot = Join-Path $Root "dist\local-windows"
 $PackageDir = Join-Path $DistRoot $PackageName

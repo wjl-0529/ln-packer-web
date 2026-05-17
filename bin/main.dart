@@ -6,7 +6,7 @@ import 'package:ln_packer_web/novel_packer.dart';
 import 'package:ln_packer_web/pack_argument.dart';
 import 'package:console/console.dart';
 
-const String gitUrl = "https://github.com/your-github-name/ln-packer-web";
+const String gitUrl = "https://github.com/wjl-0529/bili-novel-UI-Packer";
 const String version = "0.2.42";
 
 void main(List<String> args) async {
@@ -23,7 +23,7 @@ void main(List<String> args) async {
 }
 
 void printWelcome() {
-  print("欢迎使用 LN Packer Web CLI!");
+  print("欢迎使用 bili-novel-UI-Packer CLI!");
   print("基于原轻小说打包器项目二次开发");
   print("当前版本: $version");
   print("如遇报错请先查看能否正常访问输入网址");
