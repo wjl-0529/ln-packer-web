@@ -31,7 +31,20 @@ jobs:
 
       - name: Install Web dependencies
         working-directory: web
-        run: npm ci
+        env:
+          NPM_CONFIG_AUDIT: "false"
+          NPM_CONFIG_FUND: "false"
+          NPM_CONFIG_FETCH_RETRIES: "5"
+          NPM_CONFIG_FETCH_RETRY_MINTIMEOUT: "20000"
+          NPM_CONFIG_FETCH_RETRY_MAXTIMEOUT: "120000"
+          NPM_CONFIG_REGISTRY: "https://registry.npmjs.org/"
+        run: |
+          for attempt in 1 2 3; do
+            npm ci --prefer-offline --no-audit --no-fund && exit 0
+            echo "npm ci failed on attempt ${attempt}; retrying in $((attempt * 10)) seconds..."
+            sleep $((attempt * 10))
+          done
+          npm ci --prefer-offline --no-audit --no-fund
 
       - name: Test Dart web backend
         run: dart test test/web
