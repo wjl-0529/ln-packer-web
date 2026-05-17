@@ -1,0 +1,11 @@
+.dart_tool/
+.dart-pub-cache/
+.git/
+.idea/
+build/
+data/
+node_modules/
+web/dist/
+web/node_modules/
+*.log
+npm-debug.log*

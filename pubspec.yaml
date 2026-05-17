@@ -1,0 +1,25 @@
+﻿name: ln_packer_web
+description: Self-hosted light novel EPUB packer with a Dart web service, React UI, Docker deployment, and CLI entry.
+version: 0.2.42
+
+environment:
+  sdk: '>3.0.0'
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.16.0
+dependencies:
+  archive: ^3.5.1
+  console: ^4.1.0
+  fast_gbk: ^1.0.0
+  html: ^0.15.4
+  http: ^1.1.0
+  logger: ^2.4.0
+  path: ^1.8.3
+  retry: ^3.1.0
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  shelf_static: ^1.1.2
+  synchronized: ^3.1.0
+  uuid: ^3.0.7
+  xml: ^6.2.2

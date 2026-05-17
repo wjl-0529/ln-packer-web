@@ -1,0 +1,16 @@
+﻿# Files and directories created by pub.
+.dart_tool/
+.dart-pub-cache/
+.packages
+.idea/
+
+# Conventional directory for build output.
+build/
+dist/
+.tools/
+
+*.log
+data/
+web/dist/
+web/node_modules/
+.gitee/
